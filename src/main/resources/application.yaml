@@ -1,0 +1,44 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: -1
+  task:
+    scheduling:
+      pool.size: 2
+  mail:
+    host: email-host
+    port: 587
+    username: username
+    password: password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+          starttls:
+            enable: true
+
+  data.mongodb.database: template
+
+server:
+  error:
+    include-message: always
+
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+app:
+  front: http://localhost:4200
+  email: support@domain.com

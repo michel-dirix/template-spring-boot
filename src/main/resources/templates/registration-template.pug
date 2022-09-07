@@ -1,0 +1,10 @@
+extends ./layout
+
+block prepend content
+    div
+        h2 Bienvenue sur l'application !
+        hr
+        p
+            | Félicitations #{user.firstname}, vous venez de rejoindre l'application.
+        p Votre e-mail d'inscription est le suivant :
+            span.email  #{user.email}

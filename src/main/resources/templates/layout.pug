@@ -1,0 +1,198 @@
+html
+    head
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap', rel='stylesheet')
+        style.
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                color: #2d296f;
+                font-family: 'Inter', sans-serif;
+                letter-spacing: 0.6pt;
+                background: #FDFFF4;
+            }
+
+            #content, td, * {
+                font-family: 'Inter', sans-serif !important;
+                font-size: 16px;
+                color: #2d296f;
+            }
+            
+            h2 {
+                font-size: 22px;
+                font-weight: 400;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            tr {
+                vertical-align: top;
+            }
+
+            td {
+                border: none;
+                padding: 15px;
+                width: 50%;
+                border-left: solid 1px lightgray;
+            }
+
+            tr.noTopPadding td {
+                padding-top: 0;
+            }
+
+            tr.pt5 td {
+                padding-top: 5px;
+            }
+
+            tr.noBottomPadding td {
+                padding-bottom: 0;
+            }
+
+            td.pl10 {
+                padding-left: 10px;
+            }
+
+            th {
+                text-transform: uppercase;
+                color: #999;
+                border-bottom: solid 1px lightgray;
+                padding-bottom: 10px;
+                border-left: 1px solid lightgray;
+            }
+
+            td:first-of-type, th:first-of-type, .noLeftBorder, .orderIcon {
+                border-left: none;
+            }
+
+            .capitalizeFirstLetter::first-letter {
+                text-transform: uppercase;
+            }
+            
+            h2 {
+                color: #4a4a4a;
+                text-align: center;
+                letter-spacing: 1.5pt;
+            }
+
+            hr {
+                width: 40%;
+                border: 1px solid #E2E2E2;
+                margin-bottom: 40px;
+            }
+
+            p.info {
+                padding: 15px;
+                background-color: #f9fafe;
+                font-size: 10px;
+            }
+
+            fieldset {
+                padding: 15px;
+                font-size: 12px;
+                box-shadow: 0 0 10px #0000004d;
+                border: solid 1px lightgray;
+                border-radius: 5px;
+            }
+
+            legend {
+                background: white;
+                padding: 0 5px;
+                font-size: 13px;
+                color: #3242a3;
+                font-weight: bold;
+            }
+
+            #mail-container {
+                margin: auto;
+                padding: 30px 60px;
+                width: 800px;
+                background-color: #FDFFF4;
+            }
+
+            #content {
+                background: #fff;
+                padding: 10px 30px;
+            }
+
+            #content strong, #content strong a {
+                color: #3242a3;
+            }
+
+            #content a.button {
+                display: block;
+                margin: 30px auto;
+                width: 30%;
+                min-height: 20px;
+                padding: 15px;
+                text-align: center;
+                text-decoration: none;
+                background-color: #2D296F;
+                color: #fff;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 500;
+                border-radius: 4px;
+            }
+
+            #content a.button.red {
+                background-color: #fc5c7d;
+            }
+
+            #photo {
+                margin-top: 30px;
+            }
+
+            #logoLink {
+                display: block;
+                margin: auto;
+                text-align:center;
+            }
+
+            #logo {
+                max-width: 400px;
+                max-height: 75px;
+                margin: auto;
+                margin-bottom: 15px;
+            }
+
+            #footer {
+                text-align: center;
+                padding: 30px;
+            }
+
+            #footer a {
+                color: #6b6c79;
+                text-decoration: none;
+            }
+
+            #footer p#notifs {
+                margin-top:5px;
+            }
+
+            #footer p#notifs small a {
+                font-size:12px
+            }
+
+            .gray {
+                color: #4a4a4a;
+            }
+
+            .small {
+                font-size:13px
+            }
+    body
+        #mail-container
+            a#logoLink(href='https://domain.com')
+                img#logo(src='Your icon', alt='application icon')
+
+            #content
+                block content
+                    p Bonne journée !
+
+            #footer
+                p
+                    strong En cas de questions, contactez-nous :
+                    br
+                    |         support@domain.com
